@@ -1,10 +1,10 @@
 <?php
 
 
-define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "root");    // The database username. 
-define("PASSWORD", "");    // The database password. 
-define("DATABASE", "facility");    // The database name.
+define("HOST", "remotemysql.com");     // The host you want to connect to.
+define("USER", "WsqYvA1veb");    // The database username. 
+define("PASSWORD", "LuOGvcevAL");    // The database password. 
+define("DATABASE", "WsqYvA1veb");    // The database name.
 
 try {
 	$connect = new PDO('mysql:host='.HOST.';dbname='.DATABASE, USER, PASSWORD);
