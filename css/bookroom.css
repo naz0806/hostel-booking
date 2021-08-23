@@ -171,6 +171,9 @@ a .btn-danger{
 
     nav.navbar{
         padding: 15px 20px !important;
+        background: url(../images/usm-header.png) repeat 0 0 !important;
+        background-size: cover !important;
+        object-fit: cover !important;
     }
 
     li.nb-item{
