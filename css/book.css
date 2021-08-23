@@ -1,0 +1,280 @@
+:root{
+    --clr-lightblue: #64a5f5;
+    --clr-blue: #2585fa;
+}
+
+body{
+    min-height: 100vh;
+}
+
+nav
+{
+    box-shadow: 0 2px 4px rgba(39, 30, 30, 0.3) !important;
+    /* background-color: #00000070 !important; */
+    position: relative !important;
+    height: 75px;
+    padding: 15px 50px !important;
+}
+
+.nav-container {
+   width: 100% !important;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.btn-info {
+    height: 36px !important;
+    border-radius: 25px !important;
+    font-size: 14px !important;
+    font-weight: 600;
+    padding: 5px 10px 10px 10px !important;
+    color: white;
+    margin-top: 1%;
+    background-color: inherit !important;
+    border: 2px solid #2585fa !important;
+    position: absolute;
+    right: 0 !important;
+    top: 4.5px;
+    margin-right: 5% !important;
+}
+
+button.btn-info:hover {
+    color: white !important;
+    background-color: #2585fa !important;
+    cursor: pointer !important;
+    padding: 7.5px 10px 10px 10px !important;
+}
+
+li.nav-item a.nav-link:hover{
+    color: #64a5f5 !important;
+    cursor: pointer !important;
+}
+
+li.active {
+    background-color: inherit !important;
+}
+
+.nav-item li{
+    font-size: 14px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    /* color: #fff !important; */
+}
+
+.nav-link{
+    margin-top: 2%;
+}
+
+/* ============================Section Booking Form=================================== */
+
+#booking_form{
+    margin-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h2{
+    margin-left: 1%;
+}
+
+#ins{
+    margin-bottom: 2% !important;
+    margin-left: 1%;
+}
+
+.container-fluid{
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 0px 0px !important;
+ 
+} 
+
+.card-body {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+}
+
+.card {
+    margin-bottom: 2%;
+    margin-right: 10px;
+}
+
+.cont {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    /* padding: 10px 16px 10px 16px !important; */
+}
+
+.cont-label{
+    width: 80%;
+    text-align: right !important;
+    vertical-align: middle !important;
+    padding-top: auto;
+    padding-bottom: 7px;
+}
+.cont-text {
+    font-family: Open Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color :black;
+    float: right !important;
+    margin-right: 24px;
+    padding-bottom: 7px;
+}
+
+.cont-detail {
+    width: 20%;
+    
+}
+
+.card-body .btn{
+    width: 100% !important;
+    cursor: pointer;
+    background-color: #64a5f5;
+    border: #64a5f5;
+    margin-top: 0px;
+}
+
+.btn:hover, .btn:focus {
+    background-color: #2585fa !important;
+    border: 2px solid #64a5f5 !important;
+    outline: none !important; 
+    border-style: none !important; 
+}
+
+a .btn-danger{
+    width: 100% !important;
+    height: auto;
+}
+
+@media only screen and (max-device-width: 375px){
+    body{
+        height: 100vh;
+        /* overflow: hidden; */
+        width: 100vw !important;
+    }
+
+    nav.navbar{
+        padding: 15px 20px !important;
+        background: url(../images/usm-header.png) repeat 0 0 !important;
+        background-size: cover !important;
+        object-fit: cover !important;
+    }
+
+    li.nb-item{
+        z-index: 9999 !important;
+        background-color: #353a3e !important;
+        padding: 5px 10px 10px 10px;
+        font-size: 14px;
+        
+    }
+
+    .btn-info{
+        margin-top: 4%;
+    }
+
+    h2{
+        font-size: larger !important;
+        margin-left: 8px;
+        margin-top: 20px !important;
+    }
+
+    p{
+        font-size: 12px !important;
+        margin-left: 8px !important;
+    }
+
+    .container-fluid{
+        display: block !important;
+        
+    }
+
+    .card-form{
+        width: 100% !important;
+        order: 2;
+        margin-bottom: 20px;
+    }
+     .card-cart{
+        width: fit-content !important;
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    .card-header{
+        font-size: 13px !important;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group select,.form-group input  {
+        height: 36px !important;
+        font-size: 12px ;
+    }
+
+    .form-check-label{
+        font-size: 10px !important ;
+    }
+
+    .form-check-input{
+        margin-top: -7px !important;
+    }
+
+    button.btn{
+        font-size: 14px !important;
+    }
+    
+    th{
+        font-size: 12px !important;
+    }
+    
+    td{
+        font-size: 12px ;
+    }
+
+    .cont{
+        width: 100%;
+    }
+
+    .cont-label{
+        margin-right: 10px;
+        width: 80%;
+    }
+
+    .cont-detail{
+        /* width: fit-content; */
+        font-size: 12px;
+    }
+
+    .cont-text, .cont-text span{
+        font-size: 12px;
+        margin-right: 0px !important;
+        margin-top: 2px !important;
+    }
+
+    .card-body{
+        padding: 10px!important;
+        overflow: auto;
+    }
+    
+    .card-footer{
+        width: 350px;
+    }
+
+ }
