@@ -294,14 +294,17 @@ $timenow = time();
             </div>
 
                 <div class="col-4 d-block d-sm-none">
-                    <button type="button" class=" btn btn-light"><i class="bi bi-arrow-down-up"></i>Sort by</button>
+                    <button type="button" class=" btn btn-light" data-id="sort-01"><i class="bi bi-arrow-down-up"></i>Sort by</button>
+                        
                 </div>
                 <div class="col-4 d-block d-sm-none">
                     <button type="button" class="btn btn-light drawer-link" data-id="drawer-01"><i class="bi bi-funnel"></i>Filter</button>
                         <div class="drawer" data-id="drawer-01">
-                            <div class="wrapper">
-                                <a class="close" href="#"><i class="bi bi-x"></i></a>
-                                <h5>Facilities</h5>
+                        <a class="close" href="#"><i class="bi bi-x"></i></a>
+                        <h5 style="font-size: 16px;" align="center">Facilities</h5>
+                            <div class="wrapper" style="margin-left: 35%;">
+                                
+                                
                                 <?php
                                     $sql = "
                                     SELECT DISTINCT(listed_name) FROM facility_list ORDER BY listed_name DESC
@@ -312,7 +315,7 @@ $timenow = time();
                                     foreach($data as $row)
                                     {
                                     ?>
-                                    <div class="form-check">
+                                    <div class="form-check" >
                                         <input type="checkbox" class="form-check-input fl_room" name="fl_room[]" id="<?php echo $rows['pklist_fac'];?>" value="<?php echo $row['listed_name']; ?>"  >
                                         <label class="form-check-label" for="fl_room"><?php echo $row['listed_name']; ?></label>
                                     </div>
